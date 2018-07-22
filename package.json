@@ -1,0 +1,32 @@
+{
+  "name": "miwebredone",
+  "version": "1.0.0",
+  "description": "Mi Web Page",
+  "main": "index.js",
+  "scripts": {
+    "index:sass": "node-sass sass/index.scss css/index.css -w",
+    "galerija:sass": "node-sass sass/galerija.scss css/galerija.css -w",
+    "kolektyvas:sass": "node-sass sass/kolektyvas.scss css/kolektyvas.css -w",
+    "kontaktai:sass": "node-sass sass/kontaktai.scss css/kontaktai.css -w",
+    "paslaugos:sass": "node-sass sass/paslaugos.scss css/paslaugos.css -w",
+    "produktai:sass": "node-sass sass/produktai.scss css/produktai.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masalism/MiWebRedone.git"
+  },
+  "author": "Mantas Masalis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masalism/MiWebRedone/issues"
+  },
+  "homepage": "https://github.com/masalism/MiWebRedone#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}
