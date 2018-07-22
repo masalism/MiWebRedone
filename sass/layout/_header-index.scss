@@ -1,0 +1,12 @@
+.header {
+    background-image: linear-gradient(rgba($black, .8),
+    rgba($black, .5)),
+    url(/img/header.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+
+    &__logo {
+        height: 25rem;
+    }
+}
