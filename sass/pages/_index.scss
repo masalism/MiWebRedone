@@ -1,4 +1,24 @@
-.about-us__text {
-    font-size: 1.7rem;
-    line-height: 3rem;
+.about-us {
+    &__text {
+        font-size: 1.7rem;
+        line-height: 3rem;
+    }
+    &__photo {
+        width: 90%;
+        box-shadow: 0 1.5rem 4rem rgba($black, .4);
+        transition: all .4s;
+
+        &:hover {
+            transform: scale(1.15) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($pink, .5);
+            z-index: 20;
+        }
+    }
+
+    
 }
+
+.about-mi {
+    background: $grey-light;
+}
+

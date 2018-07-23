@@ -32,8 +32,11 @@ body {
     background-image: linear-gradient(to right, $pink-light, $pink-dark);
     color: transparent;
     -webkit-background-clip: text;
+    transition: all .5s;
 
-    
+    &:hover {
+        transform: scale(1.05) translateY(-.5rem);
+    }
 }
 
 .heading__2:first-letter {
