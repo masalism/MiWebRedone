@@ -1,8 +1,28 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    line-height: 1.7rem;
 }
 
 .text-pink {
     color: $pink;
+}
+
+.heading__1 {
+    backface-visibility: hidden;
+    animation: moveInLeft 1s ease-out .5s backwards;
+
+    &--address {
+        font-weight: 300;
+        display: block;
+        letter-spacing: 0.2rem;
+        font-size: 4.2rem;
+        animation: moveInLeft 1s ease-out .5s backwards;
+    }
+    
+    &--phone {
+        font-size: 5rem;
+        letter-spacing: 0.5rem;
+        font-weight: 300;
+    }
 }
