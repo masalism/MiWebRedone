@@ -33,12 +33,49 @@ body {
     letter-spacing: 0.5rem;
     font-weight: 300; }
 
+.heading__2 {
+  font-size: 3.5rem;
+  background-image: linear-gradient(to right, #f76cba, #c61083);
+  color: transparent;
+  -webkit-background-clip: text; }
+
+.heading__2:first-letter {
+  font-family: 'Great Vibes', cursive;
+  font-size: 10rem;
+  margin-right: 20px; }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 50%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(243, 44, 155, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(/img/header.jpg);
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  display: block; }
   .header__box {
     position: absolute;
     left: 50%;
@@ -51,3 +88,7 @@ body {
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     backface-visibility: hidden; }
+
+.about-us__text {
+  font-size: 1.7rem;
+  line-height: 3rem; }

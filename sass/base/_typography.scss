@@ -26,3 +26,18 @@ body {
         font-weight: 300;
     }
 }
+
+.heading__2 {
+    font-size: 3.5rem;
+    background-image: linear-gradient(to right, $pink-light, $pink-dark);
+    color: transparent;
+    -webkit-background-clip: text;
+
+    
+}
+
+.heading__2:first-letter {
+    font-family: 'Great Vibes', cursive;
+    font-size: 10rem;
+    margin-right: 20px;
+}
