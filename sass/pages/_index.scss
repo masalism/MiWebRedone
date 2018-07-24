@@ -14,11 +14,18 @@
             z-index: 20;
         }
     }
-
-    
 }
 
 .about-mi {
     background: $grey-light;
+
+    &__name {
+        font-size: 2rem;
+    }
+
+    &__quaote {
+        font-size: 1.7rem;
+        line-height: 4rem;
+    }
 }
 
