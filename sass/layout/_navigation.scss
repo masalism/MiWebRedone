@@ -11,10 +11,11 @@
         letter-spacing: 1px;
         color: $white;
         font-weight: 400;
-        transition: color .5s;
+        transition: all .5s;
 
         &:hover {
             color: $pink;
+            transform: translateX(0.5rem) translateY(0.2rem);
         }
 
         &--active {

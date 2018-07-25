@@ -27,5 +27,21 @@
         font-size: 1.7rem;
         line-height: 4rem;
     }
+    
+    &__star {
+        animation: pulse 2.5s infinite; 
+    }
+}
+
+.moveFromRight {
+    animation-name: moveFromRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.moveFromLeft {
+    animation-name: moveFromLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 

@@ -8,6 +8,36 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1); }
+  33% {
+    opacity: 1;
+    transform: scale(1.2); }
+  67% {
+    opacity: 1;
+    transform: scale(0.8); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
 html {
   font-size: 62.5%; }
 
@@ -126,9 +156,10 @@ body {
     letter-spacing: 1px;
     color: #fff;
     font-weight: 400;
-    transition: color .5s; }
+    transition: all .5s; }
     .mi-menu__item:hover {
-      color: #f32c9b; }
+      color: #f32c9b;
+      transform: translateX(0.5rem) translateY(0.2rem); }
     .mi-menu__item--active {
       color: #f32c9b; }
   .mi-menu__logo {
@@ -174,3 +205,15 @@ body {
   .about-mi__quaote {
     font-size: 1.7rem;
     line-height: 4rem; }
+  .about-mi__star {
+    animation: pulse 2.5s infinite; }
+
+.moveFromRight {
+  animation-name: moveFromRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; }
+
+.moveFromLeft {
+  animation-name: moveFromLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; }
