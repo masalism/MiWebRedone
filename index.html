@@ -19,6 +19,40 @@
 <body>
     <!-- header -->
     <header class="header">
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top mi-menu">
+            <a href="#" class="text-light text-uppercase hidden">
+                <img src="img/logo-white.png" alt="mi-logo" class="mi-menu__logo">
+            </a>
+            <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <div class="bg-light line1"></div>
+                <div class="bg-light line2"></div>
+                <div class="bg-light line3"></div>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold" id="myNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link m-2 mi-menu__item mi-menu__item--active">Pagrinidinis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="paslaugos.html" class="nav-link m-2 mi-menu__item">Paslaugos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kolektyvas.html" class="nav-link m-2 mi-menu__item">Kolektyvas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="produktai.html" class="nav-link m-2 mi-menu__item">Produktai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galerija.html" class="nav-link m-2 mi-menu__item">Galerija</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kontaktai.html" class="nav-link m-2 mi-menu__item">Kontaktai</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end of navigation -->
         <div class="container">
             <div class="row">
                 <div class="col text-center header__box">
@@ -227,22 +261,25 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center my-3">
+                <a href="https://www.facebook.com/pg/migrozis/reviews/?ref=page_internal" target="_blank" class="mi-btn"> Daugiau atsiliepimu</a>
+            </div>
         </div>
     </section>
     <!-- end of about mi -->
     <!-- footer -->
-    <footer class="mi-footer pt-5">
+    <footer class="mi-footer p-5">
         <div class="container-fluid">
             <div class="row my-2">
                 <div class="col">
                     <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a href="https://www.facebook.com/migrozis/?ref=bookmarks">
+                        <li class="list-inline-item px-3">
+                            <a href="https://www.facebook.com/migrozis/?ref=bookmarks" target="_blank">
                                 <span class="fab fa-facebook-square fa-3x text-pink mi-footer__facebook"></span>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.instagram.com/migroziostudija/?hl=en">
+                            <a href="https://www.instagram.com/migroziostudija/?hl=en" target="_blank">
                                 <span class="fab fa-instagram fa-3x text-pink mi-footer__instagram"></span>
                             </a>
                         </li>
@@ -250,49 +287,45 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-sm-8">
+                <div class="col-lg-4 col-sm-6 mx-auto">
                     <ul class="list-unstyled text-white">
-                        <li class="list-item">
-                            <a href="/index.html" class="footer__link">Pagrinidinis</a>
+                        <li class="list-item mi-footer__list-item">
+                            <a href="/index.html" class="mi-footer__link">Pagrinidinis</a>
                         </li>
                         <li class="footer__item">
-                            <a href="/paslaugos.html" class="footer__link">Paslaugos</a>
+                            <a href="/paslaugos.html" class="mi-footer__link">Paslaugos</a>
                         </li>
                         <li class="footer__item">
-                            <a href="/kolektyvas.html" class="footer__link">Kolektyvas</a>
+                            <a href="/kolektyvas.html" class="mi-footer__link">Kolektyvas</a>
                         </li>
                         <li class="footer__item">
-                            <a href="/produktai.html" class="footer__link">Produktai</a>
+                            <a href="/produktai.html" class="mi-footer__link">Produktai</a>
                         </li>
                         <li class="footer__item">
-                            <a href="/galerija.html" class="footer__link">Galerija</a>
+                            <a href="/galerija.html" class="mi-footer__link">Galerija</a>
                         </li>
                         <li class="footer__item">
-                            <a href="/kontaktai.html" class="footer__link">Kontaktai</a>
+                            <a href="/kontaktai.html" class="mi-footer__link">Kontaktai</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-sm-8">
-                    <div class="footer-contacts text-white">
-                        <p class="footer__kontaktai-tekstas">
-                            Darbo laikas: </br>
-                            Pirmadienis - penktadienis: 09:00 - 19:00</br>
-                            Šestadienis: 09:00 - 14:00</br>
-                            Sekmadienis: Nedirbame</br>
-                            Kiečių 77-1, Aleksotas, Kaunas</br>
-                            Tel: +370 688 89074
-                        </p>
-                    </div>
+                <div class="col-lg-4 col-sm-6">
+                    <p class="mi-footer__contacts text-white">
+                        Darbo laikas: </br>
+                        Pirmadienis - penktadienis: 09:00 - 19:00</br>
+                        Šestadienis: 09:00 - 14:00</br>
+                        Sekmadienis: Nedirbame</br>
+                        Kiečių 77-1, Aleksotas, Kaunas</br>
+                        Tel: +370 688 89074
+                    </p>
                 </div>
-                <div class="col-lg-4 col-sm-8">
-                    <div class="footer__logo">
-                        <img src="/img/logo-white.png" alt="Mi logo" class="footer__logo-mi u-backface">
-                    </div>
+                <div class="col-lg-4 col-sm-6 mx-auto text-center">
+                    <img src="/img/logo-white.png" alt="Mi logo" class="mi-footer__logo">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="footer__copyright-text text-center text-white py-3">&copy; 2018, Mi Grožio Studija</p>
+                    <p class="text-white pt-5 text-center mi-footer__copy">&copy; 2018, Mi Grožio Studija</p>
                 </div>
             </div>
         </div>
