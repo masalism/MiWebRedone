@@ -1,0 +1,24 @@
+.header-2 {
+    background-size: cover;
+    height: 75vh;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+
+    &__textbox {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__text {
+        font-size: 8rem;
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+        backface-visibility: hidden;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+    }
+}
