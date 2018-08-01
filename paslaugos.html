@@ -63,58 +63,644 @@
         <!-- navtabs -->
         <nav>
             <div class="nav nav-pills nav-fill" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active tablinks rounded-0 py-4" id="nav-kirpyklos-tab" data-toggle="tab" href="#nav-kirpyklos" role="tab" aria-controls="nav-kirpyklos"
-                    aria-selected="true">Kirpyklos Paslaugos</a>
-                <a class="nav-item nav-link tablinks rounded-0 py-4" id="nav-manikiuro-tab" data-toggle="tab" href="#nav-manikiuro" role="tab" aria-controls="nav-manikiuro"
-                    aria-selected="false">Manikiūro Paslaugos</a>
-                <a class="nav-item nav-link tablinks rounded-0 py-4" id="nav-masazuotojo-tab" data-toggle="tab" href="#nav-masazuotojo" role="tab" aria-controls="nav-masazuotojo"
-                    aria-selected="false">Masažuotojo Paslaugos</a>
-                <a class="nav-item nav-link tablinks rounded-0 py-4" id="nav-kosmetologo-tab" data-toggle="tab" href="#nav-kosmetologo" role="tab" aria-controls="nav-kosmetologo"
-                    aria-selected="false">Kosmetologo-vizažisto Paslaugos</a>
-                <a class="nav-item nav-link tablinks rounded-0 py-4" id="nav-makiazo-tab" data-toggle="tab" href="#nav-makiazo" role="tab" aria-controls="nav-makiazo"
-                    aria-selected="false">Makiažo-grimo Paslaugos</a>
+                <a class="nav-item nav-link active tablinks rounded-0 py-4" id="nav-kirpyklos-tab" data-toggle="tab" href="#nav-kirpyklos"
+                    role="tab" aria-controls="nav-kirpyklos" aria-selected="true">Kirpyklos Paslaugos</a>
+                <a class="nav-item nav-link tablinks rounded-0 py-4" id="nav-manikiuro-tab" data-toggle="tab" href="#nav-manikiuro" role="tab"
+                    aria-controls="nav-manikiuro" aria-selected="false">Manikiūro Paslaugos</a>
+                <a class="nav-item nav-link tablinks rounded-0 py-4" id="nav-masazuotojo-tab" data-toggle="tab" href="#nav-masazuotojo" role="tab"
+                    aria-controls="nav-masazuotojo" aria-selected="false">Masažuotojo Paslaugos</a>
+                <a class="nav-item nav-link tablinks rounded-0 py-4" id="nav-kosmetologo-tab" data-toggle="tab" href="#nav-kosmetologo" role="tab"
+                    aria-controls="nav-kosmetologo" aria-selected="false">Kosmetologo-vizažisto Paslaugos</a>
+                <a class="nav-item nav-link tablinks rounded-0 py-4" id="nav-makiazo-tab" data-toggle="tab" href="#nav-makiazo" role="tab"
+                    aria-controls="nav-makiazo" aria-selected="false">Makiažo-grimo Paslaugos</a>
             </div>
         </nav>
         <!-- end of navtabs -->
-        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-kirpyklos" role="tabpanel" aria-labelledby="nav-kirpyklos-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam
-                incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua
-                ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis
-                veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi
-                culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat
-                ex.
+        <div class="tab-content col-lg-10 mx-auto my-5" id="nav-tabContent">
+            <div class="tab-pane fade show active text-muted" id="nav-kirpyklos" role="tabpanel" aria-labelledby="nav-kirpyklos-tab">
+                <table class="table">
+                    <thead>
+                        <th scope="col" class="table__td-1">Paslauga</th>
+                        <th scope="col" class="table__td-2"></th>
+                        <th scope="col" class="table__td-3">Kaina</th>
+                    </thead>
+                    <tbody class="paslaugos__table">
+                        <tr>
+                            <td class="table__td-1" scope="row">Moteriškas kirpimas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">15 - 25€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Vyriškas kirpimas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">8 - 10€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Vaikiškas kirpimas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">7€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Šukavimas ir galvos plovimas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">15 - 20€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Proginės šukuosenos</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">10 - 50€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Cheminis šukavimas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">35 - 50€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Sruogų dažymas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">49 - 80€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Šaknų dažymas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">30 - 40€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Plaukų dažymas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">40 - 70€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Dažymas BOND ULTIMA 8 sistema</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">10 - 15€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Procedūra plaukams su BOND ULTIMA 8 sistema</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">20 - 25€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Galvos odos pilingas + fenavimas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">15 - 20€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Plauko struktūros atstatymas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">8 - 20€</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="tab-pane fade" id="nav-manikiuro" role="tabpanel" aria-labelledby="nav-manikiuro-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam
-                incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua
-                ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis
-                veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi
-                culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat
-                ex.
+            <div class="tab-pane fade text-muted" id="nav-manikiuro" role="tabpanel" aria-labelledby="nav-manikiuro-tab">
+                <table class="table">
+                    <thead>
+                        <th scope="col" class="table__td-1">Paslauga</th>
+                        <th scope="col" class="table__td-2"></th>
+                        <th scope="col" class="table__td-3">Kaina</th>
+                    </thead>
+                    <tbody class="paslaugos__table">
+                        <tr>
+                            <td class="table__td-1" scope="row">Antakių dažymas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">3€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Antakių korekcija</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">3€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Blakstienų dažymas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">3€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Manikiūras</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">9€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Manikiūras + ilgalaikis gelinis lakavimas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">16€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">ilgalaikis gelinis lakavimas (prancūziškas)</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">+1€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">ilgalaikis gelinis lakavimas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">10€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Nagų dailė</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">+1 - 5€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Pedikiūras</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">20€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Pedikiūras + ilgalaikis gelinis lakavimas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">26€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Blakstienų priauginimas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">25€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Blakstienų papildymas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">15€</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="tab-pane fade" id="nav-masazuotojo" role="tabpanel" aria-labelledby="nav-masazuotojo-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam
-                incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua
-                ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis
-                veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi
-                culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat
-                ex.
+            <div class="tab-pane fade text-muted" id="nav-masazuotojo" role="tabpanel" aria-labelledby="nav-masazuotojo-tab">
+                <table class="table">
+                    <thead>
+                        <th scope="col" class="table__td-1">Paslauga</th>
+                        <th scope="col" class="table__td-2"></th>
+                        <th scope="col" class="table__td-3">Kaina</th>
+                    </thead>
+                    <tbody class="paslaugos__table">
+                        <tr>
+                            <td class="table__td-1" scope="row">Miofascialinis veido ir galvos masažas.
+                                <i>Trukmė: 75 - 90 min.</i>
+                            </td>
+                            <td class="table__td-2">
+                                <button type="button" class="btn-small" data-toggle="modal" data-target="#miofascialinis">
+                                    Plačiau
+                                </button>
+                                <div class="modal fade" id="miofascialinis" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title heading__3" id="exampleModalLongTitle">Miofascialinis veido ir galvos masažas</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-muted paragraph">Veido ovalą formuojantis masažas. Masažo metodika pasižymi ryškiu atjauninančiu
+                                                    efektu. Sprendžia tokias problemas, kaip paburkimas, minkštojo audinio
+                                                    perteklius, gilios raukšlės, praradę tonusą skruostai, mažinama dvigubo
+                                                    pagurklio zona. Gaunami puikūs rezultatai, normalizuojasi raumenų tonusas,
+                                                    gerėja kraujotaka, nuimta įtampa nuo pečių juostos ir kaklo mažina emocinio
+                                                    streso problemas.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                Trukmė: 75-90 min
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="table__td-3">28€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Kobido veido masažas.
+                                <i>Trukmė: 60 - 75 min.</i>
+                            </td>
+                            <td class="table__td-2">
+                                <button type="button" class="btn-small" data-toggle="modal" data-target="#kobido">
+                                    Plačiau
+                                </button>
+                                <div class="modal fade" id="kobido" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title heading__3" id="exampleModalLongTitle">Kobido veido masažas</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-muted paragraph">Japoniškas terapinis veido masažas, atliekamas pagal senas japonų tradicijas.
+                                                    Procedūros metu greitais, smūginiais, ritmiškais prisilietimais stimuliuojami
+                                                    veido raumenys. Kobido masažas stiprina, tonizuoja ir suteikia gyvybingumo
+                                                    veido raumenims, nuo kurių priklauso odos glebumas. Pakelia visus veido
+                                                    kontūrus – lūpų kampučius, antakius.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                Trukmė: 60 - 75 min
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </td>
+                            <td class="table__td-3">25€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Atpalaiduojantis (antistresinis) kūno masažas.
+                                <i>Trukmė: 90 min.</i>
+                            </td>
+                            <td class="table__td-2">
+                                <button type="button" class="btn-small" data-toggle="modal" data-target="#atpalaiduojantis">
+                                    Plačiau
+                                </button>
+                                <div class="modal fade" id="atpalaiduojantis" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title heading__3" id="exampleModalLongTitle">Atpalaiduojantis (antistresinis) kūno masažas</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-muted paragraph">Efektyviai atpalaiduoja raumenis, ramina ir teigiamai veikia vidinę būseną,
+                                                    mažina įtampą, nuovargį, gražina gerą savijautą, pritaikomas kiekvienam
+                                                    individualiai
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                Trukmė: 90 min
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            </td>
+                            <td class="table__td-3">30€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Anticeliulitinis masažas (Slim).
+                                <i>Trukmė: 50 - 60 min.</i>
+                            </td>
+                            <td class="table__td-2">
+                                <button type="button" class="btn-small" data-toggle="modal" data-target="#anticeliukitinis">
+                                    Plačiau
+                                </button>
+                                <div class="modal fade" id="anticeliukitinis" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title heading__3" id="exampleModalLongTitle">Anticeliulitinis masažas (Slim)</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-muted paragraph">Taikomas tam tikrų probleminių sričių (šlaunų, sėdmenų, pilvo) netolygiam
+                                                    poodiniam (celiulito) sluoksniui mažinti. Masažas išjudina nusistovėjusią
+                                                    limfą ir kraują, atkuria mikrocirkuliaciją, audiniai geriau aprūpinami
+                                                    deguonimi, geriau maitinami gilieji odos sluoksniai. Masažo metu suaktyvėja
+                                                    kraujotaka, limfotaka, atstatomas raumenų tonusas, didėja odos elastingumas,
+                                                    gerėja jos struktūra.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                Trukmė: 50-60 min
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            </td>
+                            <td class="table__td-3">20€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Liposažas.
+                                <i>Trukmė: 50 - 60 min.</i>
+                            </td>
+                            <td class="table__td-2">
+                                <button type="button" class="btn-small" data-toggle="modal" data-target="#liposažas">
+                                    Plačiau
+                                </button>
+                                <div class="modal fade" id="liposažas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title heading__3" id="exampleModalLongTitle">Liposažas</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-muted paragraph">Liekninamasis, kūno linijas formuojantis masažas. Jo metu veikiami gilieji
+                                                    odos ir poodiniai riebalų sluoksniai, atsižvelgiant i kiekvieno kliento
+                                                    individualią kūno sandarą, celiulito išsivystymo laipsnį ir riebalinio
+                                                    audinio ypatumus.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                Trukmė: 50-60 min
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="table__td-3">20€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Klasikinis kūno masažas.
+                                <i>Trukmė: 90 min.</i>
+                            </td>
+                            <td class="table__td-2">
+                                <button type="button" class="btn-small" data-toggle="modal" data-target="#klasikinis">
+                                    Plačiau
+                                </button>
+                                <div class="modal fade" id="klasikinis" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title heading__3" id="exampleModalLongTitle">Klasikinis kūno masažas</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-muted paragraph">Atpalaiduoja raumenis, mažina skausmus ir nuovargį. Masažas nuima įtampas
+                                                    pečių, sprando ir kaklo zonose. Klasikinis masažas grąžina jėgas, suteikia
+                                                    žvalumo, pagerina bendrą kūno būseną. Procedūra pritaikoma kiekvienam
+                                                    individualiai, atsižvelgiant į problemą.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                Trukmė: 90 min
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
+                            </td>
+                            <td class="table__td-3">30€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Nugaros masažas.
+                                <i>Trukmė: 90 min.</i>
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">12€</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="tab-pane fade" id="nav-kosmetologo" role="tabpanel" aria-labelledby="nav-kosmetologo-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam
-                incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua
-                ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis
-                veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi
-                culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat
-                ex.
+            <div class="tab-pane fade text-muted" id="nav-kosmetologo" role="tabpanel" aria-labelledby="nav-kosmetologo-tab">
+                <table class="table">
+                    <thead>
+                        <th scope="col" class="table__td-1">Paslauga</th>
+                        <th scope="col" class="table__td-2"></th>
+                        <th scope="col" class="table__td-3">Kaina</th>
+                    </thead>
+                    <tbody class="paslaugos__table">
+                        <tr>
+                            <td class="table__td-1" scope="row">Veido pilingas ir masažas su kauke.
+                                <i>Trukmė: 60 min.</i>
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">25€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Gilumunis veido odos valymas.
+                                <i>Trukmė: 60 - 120 min.</i>
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">30-45€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Ultragarsinis veido valymas.
+                                <i>Trukmė: 90 min.</i>
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">35€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Riebios veido odos subalansavimas.
+                                <i>Trukmė: 60 min.</i>
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">25€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Brandžios veido odos procedūra.
+                                <i>Trukmė: 90 min.</i>
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">nuo 35€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Giliai drėkinanti veido procedūra.
+                                <i>Trukmė: 90 min.</i>
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">nuo 35€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Raminanti veido procedūra jautriai odai.
+                                <i>Trukmė: 90 min.</i>
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">nuo 30€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Raminanti veido procedūra jautriai odai.
+                                <i>Trukmė: 90 min.</i>
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">nuo 35€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Rūgštinio pilingo procedūra
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">35 - 65€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Biorevitalizacija
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">nuo 150€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Mezoterapiją imituojanti veido odos procedūra
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">nuo 45€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Veido mezoterapija
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">nuo 50€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Veido mezoterapija
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">30€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">
+                                <b>Depiliacija vašku:</b>
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3"></td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Antakiai
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">4€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Viršutinė lūpa / smakras
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">4 / 6€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Pažastys
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">9€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Rankos iki alkūnių
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">10€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Rankos pilnai
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">15€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Rankos iki alkūnių
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">10€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Blauzdos / šlaunys
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">12€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Kojos pilnai
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">25€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Bikini krašteliai
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">10€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Bikini prancūziškas (dalinis)
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">18€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Bikini braziliškas (pilnas)
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">25€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">
+                                <b>Epiliacija cukraus pasta / Enzimų terapija</b>
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3"></td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Viršutinė lūpa / smakras
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">5 / 4€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Pažastys
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">12 / 9€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Rankos iki alkūnių
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">14 / 18€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Rankos pilnai
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">21 / 18€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Kojos pilnai
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">35 / 35€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Bikini krašteliai
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">15 / 9€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Bikini prancūziškas (dalinis)
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">24 / 18€</td>
+                        </tr>
+                        <tr>
+                            <td class="table__td-1" scope="row">Bikini braziliškas (pilnas)
+                            </td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">35 / 18€</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="tab-pane fade" id="nav-makiazo" role="tabpanel" aria-labelledby="nav-makiazo-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam
-                incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua
-                ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis
-                veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi
-                culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecmakiazo            </div>
+            <div class="tab-pane fade text-muted" id="nav-makiazo" role="tabpanel" aria-labelledby="nav-makiazo-tab">
+                <table class="table">
+                    <thead>
+                        <th scope="col" class="table__td-1">Paslauga</th>
+                        <th scope="col" class="table__td-2"></th>
+                        <th scope="col" class="table__td-3">Kaina</th>
+                    </thead>
+                    <tbody class="paslaugos__table">
+                        <tr>
+                            <td class="table__td-1" scope="row">Dieninis makiažas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">20€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Proginis makiažas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">30€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Nuotakos makiažas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">35€</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="table__td-1">Teminis/fantastinis grimas/žaizdų formavimas, prostetikų klijavimas/lipdymas</td>
+                            <td class="table__td-2"></td>
+                            <td class="table__td-3">15-50€</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
@@ -183,6 +769,84 @@
         </div>
     </footer>
     <!-- end of footer -->
+
+    <!-- popup -->
+    <!-- <div class="popup" id="popup1">
+        <div class="popup__content">
+            <div class="u-center-text">
+                <a href="#nav-masazuotojo" class="popup__close">&times;</a>
+                <h2 class="heading-2 heading-popup">Miofascialinis veido ir galvos masažas</h2>
+                <h3 class="heading3-card">Trukmė: 75-90 min</h3>
+                <p class="popup__text">Veido ovalą formuojantis masažas. Masažo metodika pasižymi ryškiu atjauninančiu efektu. Sprendžia tokias
+                    problemas, kaip paburkimas, minkštojo audinio perteklius, gilios raukšlės, praradę tonusą skruostai,
+                    mažinama dvigubo pagurklio zona. Gaunami puikūs rezultatai, normalizuojasi raumenų tonusas, gerėja kraujotaka,
+                    nuimta įtampa nuo pečių juostos ir kaklo mažina emocinio streso problemas.</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup2">
+        <div class="popup__content">
+            <div class="u-center-text">
+                <a href="#nav-masazuotojo" class="popup__close">&times;</a>
+                <h2 class="heading-2 heading-popup">Kobido veido masažas</h2>
+                <h3 class="heading3-card">Trukmė: 60-75 min</h3>
+                <p class="popup__text">Japoniškas terapinis veido masažas, atliekamas pagal senas japonų tradicijas. Procedūros metu greitais, smūginiais,
+                    ritmiškais prisilietimais stimuliuojami veido raumenys. Kobido masažas stiprina, tonizuoja ir suteikia
+                    gyvybingumo veido raumenims, nuo kurių priklauso odos glebumas. Pakelia visus veido kontūrus – lūpų kampučius,
+                    antakius.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup3">
+        <div class="popup__content">
+            <div class="u-center-text">
+                <a href="#nav-masazuotojo" class="popup__close">&times;</a>
+                <h2 class="heading-2 heading-popup">Atpalaiduojantis (antistresinis) kūno masažas</h2>
+                <h3 class="heading3-card">Trukmė: 90 min</h3>
+                <p class="popup__text">Efektyviai atpalaiduoja raumenis, ramina ir teigiamai veikia vidinę būseną, mažina įtampą, nuovargį, gražina
+                    gerą savijautą, pritaikomas kiekvienam individualiai.</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup4">
+        <div class="popup__content">
+            <div class="u-center-text">
+                <a href="#nav-masazuotojo" class="popup__close">&times;</a>
+                <h2 class="heading-2 heading-popup">Anticeliulitinis masažas (Slim)</h2>
+                <h3 class="heading3-card">Trukmė: 50 - 60 min</h3>
+                <p class="popup__text">Taikomas tam tikrų probleminių sričių (šlaunų, sėdmenų, pilvo) netolygiam poodiniam (celiulito) sluoksniui
+                    mažinti. Masažas išjudina nusistovėjusią limfą ir kraują, atkuria mikrocirkuliaciją, audiniai geriau
+                    aprūpinami deguonimi, geriau maitinami gilieji odos sluoksniai. Masažo metu suaktyvėja kraujotaka, limfotaka,
+                    atstatomas raumenų tonusas, didėja odos elastingumas, gerėja jos struktūra.</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup5">
+        <div class="popup__content">
+            <div class="u-center-text">
+                <a href="#nav-masazuotojo" class="popup__close">&times;</a>
+                <h2 class="heading-2 heading-popup">Liposažas</h2>
+                <h3 class="heading3-card">Trukmė: 50 - 60 min</h3>
+                <p class="popup__text">Liekninamasis, kūno linijas formuojantis masažas. Jo metu veikiami gilieji odos ir poodiniai riebalų sluoksniai,
+                    atsižvelgiant i kiekvieno kliento individualią kūno sandarą, celiulito išsivystymo laipsnį ir riebalinio
+                    audinio ypatumus. </p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup6">
+        <div class="popup__content">
+            <div class="u-center-text">
+                <a href="#nav-masazuotojo" class="popup__close">&times;</a>
+                <h2 class="heading-2 heading-popup">Klasikinis kūno masažas</h2>
+                <h3 class="heading3-card">Trukmė: 90 min</h3>
+                <p class="popup__text">Atpalaiduoja raumenis, mažina skausmus ir nuovargį. Masažas nuima įtampas pečių, sprando ir kaklo zonose.
+                    Klasikinis masažas grąžina jėgas, suteikia žvalumo, pagerina bendrą kūno būseną. Procedūra pritaikoma
+                    kiekvienam individualiai, atsižvelgiant į problemą.</p>
+            </div>
+        </div>
+    </div> -->
+    <!-- end of popup -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popepr.js"></script>
     <script src="js/bootstrap.js"></script>

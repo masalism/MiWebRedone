@@ -1,0 +1,38 @@
+.table {
+    margin-bottom: 1rem;
+    background-color: transparent;
+
+    & th,
+    td {
+        padding: 0.75rem;
+        vertical-align: top;
+    }
+
+    & thead 
+    th {
+        vertical-align: bottom;
+        padding-bottom: 3rem;
+        color: $pink;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    &__td-1 {
+        text-align: left;
+        font-size: 1.4rem;
+        animation: moveFromLeft 1s ease-out backwards;
+    }
+
+    &__td-2 {
+        text-align: center;
+        font-size: 1.4rem;
+        animation: fade 1s ease-out 1s backwards;
+    }
+
+    &__td-3 {
+        text-align: right;
+        font-size: 1.4rem;
+        animation: moveFromRight 1s ease-out backwards;
+    }
+}

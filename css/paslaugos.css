@@ -38,6 +38,12 @@
     opacity: 1;
     transform: scale(1); } }
 
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 html {
   font-size: 62.5%; }
   @media (max-width: 71.25em) {
@@ -92,6 +98,12 @@ body {
   font-size: 10rem;
   margin-right: 20px; }
 
+.heading__3 {
+  font-size: 3rem;
+  background-image: linear-gradient(to right, #f76cba, #c61083);
+  color: transparent;
+  -webkit-background-clip: text; }
+
 .mi-btn, .mi-btn:link, .mi-btn:visited {
   text-decoration: none;
   text-transform: uppercase;
@@ -112,6 +124,64 @@ body {
 .mi-btn:active, .mi-btn:focus {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(243, 44, 155, 0.2); }
+
+.btn-small, .btn-small:link, .btn-small:visited {
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 4rem;
+  padding: 0.5rem;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  background-image: linear-gradient(to right bottom, #f76cba, #c61083);
+  transition: all .2s;
+  animation-fill-mode: backwards;
+  outline: none; }
+
+.btn-small:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(243, 44, 155, 0.2);
+  outline: none; }
+
+.btn-small:active, .btn-small:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(243, 44, 155, 0.2);
+  outline: none; }
+
+.paragraph {
+  font-size: 1.7rem;
+  line-height: 2.5rem; }
+
+.table {
+  margin-bottom: 1rem;
+  background-color: transparent; }
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    vertical-align: top; }
+  .table thead
+th {
+    vertical-align: bottom;
+    padding-bottom: 3rem;
+    color: #f32c9b;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400; }
+  .table__td-1 {
+    text-align: left;
+    font-size: 1.4rem;
+    animation: moveFromLeft 1s ease-out backwards; }
+  .table__td-2 {
+    text-align: center;
+    font-size: 1.4rem;
+    animation: fade 1s ease-out 1s backwards; }
+  .table__td-3 {
+    text-align: right;
+    font-size: 1.4rem;
+    animation: moveFromRight 1s ease-out backwards; }
 
 .mi-footer {
   background-color: #303531; }

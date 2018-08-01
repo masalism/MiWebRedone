@@ -27,3 +27,38 @@
         box-shadow: 0 0.5rem 1rem rgba($pink, .2);
     }
 }
+
+.btn-small {
+    &, 
+    &:link,
+    &:visited {
+        border: none; 
+        text-decoration: none;
+        color: $white;
+        font-size: 1.4rem;
+        border-radius: 4rem;
+        padding: 0.5rem;
+        display: inline-block;
+        margin-bottom: 0.4rem;
+        text-align: center;
+        cursor: pointer;
+        background-image: linear-gradient(
+        to right bottom, $pink-light, $pink-dark);
+        transition: all .2s;
+        animation-fill-mode: backwards;
+        outline: none;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($pink, .2);
+        outline: none;
+    }
+
+    &:active,
+    &:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($pink, .2);
+        outline: none;
+    }
+}
