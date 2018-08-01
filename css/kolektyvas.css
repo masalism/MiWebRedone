@@ -1,0 +1,353 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1); }
+  33% {
+    opacity: 1;
+    transform: scale(1.2); }
+  67% {
+    opacity: 1;
+    transform: scale(0.8); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes moveFromLeftX {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem) translateY(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0); } }
+
+@keyframes moveFromRightX {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem) translateY(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0); } }
+
+@keyframes moveFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveFromLeft2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem) translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0); } }
+
+@keyframes moveFromRight2 {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem) translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0); } }
+
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 71.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 62em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 48em) {
+    html {
+      font-size: 43.25%; } }
+  @media (max-width: 36em) {
+    html {
+      font-size: 37.5%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.7rem; }
+
+.text-pink {
+  color: #f32c9b; }
+
+.heading__1 {
+  backface-visibility: hidden;
+  animation: moveInLeft 1s ease-out .5s backwards; }
+  .heading__1--address {
+    font-weight: 300;
+    display: block;
+    letter-spacing: 0.2rem;
+    font-size: 4.2rem;
+    animation: moveInLeft 1s ease-out .5s backwards; }
+  .heading__1--phone {
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 300; }
+
+.heading__2 {
+  font-size: 3.5rem;
+  background-image: linear-gradient(to right, #f76cba, #c61083);
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: all .5s; }
+  .heading__2:hover {
+    transform: scale(1.05) translateY(-0.5rem); }
+
+.heading__2:first-letter {
+  font-family: 'Great Vibes', cursive;
+  font-size: 10rem;
+  margin-right: 20px; }
+
+.heading__3 {
+  font-size: 3rem;
+  background-image: linear-gradient(to right, #f76cba, #c61083);
+  color: transparent;
+  -webkit-background-clip: text; }
+
+.mi-btn, .mi-btn:link, .mi-btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 10rem;
+  padding: 1.5rem 1.5rem;
+  display: inline-block;
+  cursor: pointer;
+  background-image: linear-gradient(to right bottom, #f76cba, #c61083);
+  transition: all .2s;
+  animation-fill-mode: backwards; }
+
+.mi-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(243, 44, 155, 0.2); }
+
+.mi-btn:active, .mi-btn:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(243, 44, 155, 0.2); }
+
+.btn-small, .btn-small:link, .btn-small:visited {
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 4rem;
+  padding: 0.5rem;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  background-image: linear-gradient(to right bottom, #f76cba, #c61083);
+  transition: all .2s;
+  animation-fill-mode: backwards;
+  outline: none; }
+
+.btn-small:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(243, 44, 155, 0.2);
+  outline: none; }
+
+.btn-small:active, .btn-small:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(243, 44, 155, 0.2);
+  outline: none; }
+
+.mi-footer {
+  background-color: #303531; }
+  .mi-footer__list-item {
+    list-style: none; }
+  .mi-footer__link:link, .mi-footer__link:visited {
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: all .5s;
+    color: #fff;
+    line-height: 2.5rem; }
+  .mi-footer__link:hover, .mi-footer__link:active {
+    color: #f32c9b; }
+  .mi-footer__contacts {
+    font-size: 1.4rem;
+    line-height: 2.5rem; }
+  .mi-footer__logo {
+    width: 30rem; }
+  .mi-footer__copy {
+    font-size: 1.4rem; }
+  .mi-footer__instagram {
+    transition: color .4s; }
+    .mi-footer__instagram:hover {
+      color: #517fa4; }
+  .mi-footer__facebook {
+    transition: color .4s; }
+    .mi-footer__facebook:hover {
+      color: #3b5998; }
+
+.header-2 {
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center; }
+  .header-2__textbox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .header-2__text {
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    backface-visibility: hidden;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out; }
+
+.mi-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+  transition: all .7s; }
+  .mi-menu__scroll {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)); }
+  .mi-menu__item {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 400;
+    transition: all .5s; }
+    .mi-menu__item:hover {
+      color: #f32c9b;
+      transform: translateX(0.5rem) translateY(0.2rem); }
+    .mi-menu__item--active {
+      color: #f32c9b; }
+  .mi-menu__logo {
+    width: 18rem; }
+
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s; }
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px); }
+
+.change .line2 {
+  opacity: 0; }
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px); }
+
+.tablinks, .tablinks:link, .tablinks:visited {
+  font-size: 1.6rem;
+  color: #777;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.4s;
+  animation-fill-mode: backwards; }
+
+.tablinks:hover {
+  background-color: #f32c9b;
+  color: #fff; }
+
+.tablinks:active, .tablinks:focus {
+  background-color: #f32c9b;
+  color: #fff; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #f32c9b; }
+
+.nav-tabs > li > a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
+.header-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/img/personalas.jpg); }
+
+.mi-personel__photo {
+  width: 55%;
+  transition: all .5s; }
+  .mi-personel__photo:hover {
+    transform: scale(1.05); }
+
+.mi-personel__prof {
+  font-size: 2rem; }
+
+.mi-personel__about {
+  font-size: 1.5rem;
+  line-height: 2rem; }
+
+.moveFromRightX {
+  animation-name: moveFromRightX;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; }
+
+.moveFromLeftX {
+  animation-name: moveFromLeftX;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; }
+
+.moveFromTop {
+  animation-name: moveFromTop;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; }
+
+.moveFromRight2 {
+  animation-name: moveFromRight2;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; }
+
+.moveFromLeft2 {
+  animation-name: moveFromLeft2;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; }
+
+.moveFromBottom {
+  animation-name: moveFromBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; }

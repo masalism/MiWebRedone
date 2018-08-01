@@ -1,0 +1,62 @@
+.header-2 {
+    background-image: linear-gradient(rgba($black, 0.8),
+    rgba($black, 0.2)),
+    url(/img/personalas.jpg);
+}
+
+.mi-personel {
+    &__photo {
+        width: 55%;
+        transition: all .5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__prof {
+        font-size: 2rem;
+    }
+
+    &__about {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+.moveFromRightX {
+    animation-name: moveFromRightX;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.moveFromLeftX {
+    animation-name: moveFromLeftX;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.moveFromTop {
+    animation-name: moveFromTop;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.moveFromRight2 {
+    animation-name: moveFromRight2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.moveFromLeft2 {
+    animation-name: moveFromLeft2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.moveFromBottom {
+    animation-name: moveFromBottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
