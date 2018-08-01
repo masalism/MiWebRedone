@@ -52,20 +52,17 @@
     &:link,
     &:visited {
         font-size: 1.6rem;
-        background-color: inherit;
         color: $grey-text;
         text-decoration: none;
-        outline: none;
         cursor: pointer;
-        padding: 1.7rem 1rem;
-        transition: 0.2s;
+        transition: 0.4s;
         animation-fill-mode: backwards;
     }
 
     &:hover {
         background-color: $pink;
         color: $white;
-        outline: none;
+
     }
 
     &:active,
