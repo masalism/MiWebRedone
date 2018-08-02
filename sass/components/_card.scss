@@ -1,0 +1,96 @@
+.book-card {
+    position: relative;
+    box-shadow: 0 1.5rem 4rem rgba($black, .5);
+    max-width: 42rem;
+    overflow: hidden;
+    transition: all .8s;
+
+    .rotate:hover & {
+        transform: rotateY(180deg);
+    }
+
+    &__back {
+        position: absolute;
+        top: -100%;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        user-select: none;
+        pointer-events: none;
+        transform: rotateY(180deg);
+        transition: top .8s, opacity .4s;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $green-light, $green-dark);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $grey-socolor, $blue-socolor);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $red-light, $red-dark);
+        }
+        &--4 {
+            background-image: linear-gradient(to right bottom, $red-light, $blue-socolor);
+        }
+        &--5 {
+            background-image: linear-gradient(to right bottom, $blue, $black);
+        }
+        &--6 {
+            background-image: linear-gradient(to right bottom, $yellow-light, $yellow-dark);
+        }
+
+
+
+        &--content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .rotate:hover &__back {
+        opacity: 1;
+        top: 0;
+        user-select: auto;
+        pointer-events: auto;
+    }
+
+    &__paragraph {
+        font-size: 2.1rem;
+        line-height: 2.3rem;
+    }
+
+    &__picture {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40rem;
+
+        &--1 {
+            background-image: url(../img/matrix_biolage.jpg);
+        } 
+        &--2 {
+            background-image: url(../img/matrix_socolor.jpg);
+        } 
+        &--3 {
+            background-image: url(../img/matrix_colorsync.jpg);
+        }
+        &--4 {
+            background-image: url(../img/matrix_soboost.jpg);
+        }
+        &--5 {
+            background-image: url(../img/matrix_totalresults.jpg);
+        }
+        &--6 {
+            background-image: url(../img/matrix_oilwonders.jpg);
+        }
+    }
+}
+
+.rotate {
+    perspective: 100rem;
+}
+
+
