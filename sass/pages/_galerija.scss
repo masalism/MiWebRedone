@@ -3,3 +3,25 @@
     rgba($black, 0.2)),
     url(/img/galery_header.jpg);
 }
+
+.underline-dark {
+    width: 150px;
+    border: 3px solid #888;
+    margin: auto;
+  }
+  
+  .gallery-list-item {
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .active-item {
+    color: $pink;
+  }
+.galery {
+    &__list {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+}

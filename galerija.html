@@ -1,20 +1,21 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="icon" href="img/logo-black.png">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/produktai.css">
-        <title>Produktai</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/logo-black.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/galerija.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <title>Galerija</title>
+</head>
 
 <body>
     <!-- header -->
@@ -41,10 +42,10 @@
                         <a href="kolektyvas.html" class="nav-link m-2 mi-menu__item">Kolektyvas</a>
                     </li>
                     <li class="nav-item">
-                        <a href="produktai.html" class="nav-link m-2 mi-menu__item mi-menu__item--active">Produktai</a>
+                        <a href="produktai.html" class="nav-link m-2 mi-menu__item">Produktai</a>
                     </li>
                     <li class="nav-item">
-                        <a href="galerija.html" class="nav-link m-2 mi-menu__item">Galerija</a>
+                        <a href="galerija.html" class="nav-link m-2 mi-menu__item mi-menu__item--active">Galerija</a>
                     </li>
                     <li class="nav-item">
                         <a href="kontaktai.html" class="nav-link m-2 mi-menu__item">Kontaktai</a>
@@ -54,14 +55,145 @@
         </nav>
         <!-- end of navigation -->
         <div class="header-2__textbox">
-            <h1 class="text-white text-uppercase header-2__text">Produktai</h1>
+            <h1 class="text-white text-uppercase header-2__text">Galerija</h1>
         </div>
     </header>
     <!-- end of header -->
 
-    <!-- products -->
-    
-    <!-- end of products -->
+    <!-- galery -->
+    <section class="py-5">
+        <div class="container-fluid">
+            <!-- title -->
+            <div class="row">
+                <div class="col py-4 text-center">
+                    <h2 class="heading__2 text-uppercase">Mūsų darbai</h2>
+                </div>
+            </div>
+            <!-- end of title -->
+        </div>
+        <ul class="list-inline text-center text-uppercase my-4 galery__list">
+            <li class="list-inline-item gallery-list-item active-item" data-filter="all">
+                Visi
+                <span class="mx-md-5 mx-3 text-muted"></span>
+            </li>
+            <li class="list-inline-item gallery-list-item" data-filter="dazymai">
+                Dažymai
+                <span class="mx-md-5 mx-3 text-muted"></span>
+            </li>
+            <li class="list-inline-item gallery-list-item" data-filter="sukuosenos">
+                Šukuosenos
+                <span class="mx-md-5 mx-3 text-muted"></span>
+            </li>
+            <li class="list-inline-item gallery-list-item" data-filter="nagai">
+                Nagai
+                <span class="mx-md-5 mx-3 text-muted"></span>
+        </ul>
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="filter sukuosenos">
+                    <a href="img/galery/1.jpg" data-lightbox="library">
+                        <img src="img/galery/1.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter nagai">
+                    <a href="img/galery/2.jpg" data-lightbox="library">
+                        <img src="img/galery/2.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter dazymai">
+                    <a href="img/galery/3.jpg" data-lightbox="library">
+                        <img src="img/galery/3.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter nagai">
+                    <a href="img/galery/4.jpg" data-lightbox="library">
+                        <img src="img/galery/4.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter sukuosenos">
+                    <a href="img/galery/5.jpg" data-lightbox="library">
+                        <img src="img/galery/5.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter dazymai">
+                    <a href="img/galery/6.jpg" data-lightbox="library">
+                        <img src="img/galery/6.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter dazymai">
+                    <a href="img/galery/7.jpg" data-lightbox="library">
+                        <img src="img/galery/7.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter nagai">
+                    <a href="img/galery/8.jpg" data-lightbox="library">
+                        <img src="img/galery/8.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter sukuosenos">
+                    <a href="img/galery/9.jpg" data-lightbox="library">
+                        <img src="img/galery/9.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter nagai">
+                    <a href="img/galery/10.jpg" data-lightbox="library">
+                        <img src="img/galery/10.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter dazymai">
+                    <a href="img/galery/11.jpg" data-lightbox="library">
+                        <img src="img/galery/11.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter nagai">
+                    <a href="img/galery/12.jpg" data-lightbox="library">
+                        <img src="img/galery/12.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter dazymai">
+                    <a href="img/galery/13.jpg" data-lightbox="library">
+                        <img src="img/galery/13.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter sukuosenos">
+                    <a href="img/galery/14.jpg" data-lightbox="library">
+                        <img src="img/galery/14.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter dazymai">
+                    <a href="img/galery/15.jpg" data-lightbox="library">
+                        <img src="img/galery/15.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter nagai">
+                    <a href="img/galery/16.jpg" data-lightbox="library">
+                        <img src="img/galery/16.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter dazymai">
+                    <a href="img/galery/17.jpg" data-lightbox="library">
+                        <img src="img/galery/17.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter nagai">
+                    <a href="img/galery/18.jpg" data-lightbox="library">
+                        <img src="img/galery/18.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter dazymai">
+                    <a href="img/galery/19.jpg" data-lightbox="library">
+                        <img src="img/galery/19.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+                <div class="filter nagai">
+                    <a href="img/galery/20.jpg" data-lightbox="library">
+                        <img src="img/galery/20.jpg" width="280px" class="m-2 img-thumbnail rounded">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of galery -->
 
     <!-- footer -->
     <footer class="mi-footer p-5">
@@ -131,7 +263,8 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popepr.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/produtkai.js"></script>
+    <script src="js/galerija.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 
 </html>
